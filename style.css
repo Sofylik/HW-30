@@ -4,8 +4,7 @@
     border: 1px solid gray;
     border-radius: 10px;
     animation-name: box;
-    animation-duration: 10s;
-    animation-timing-function: ease-in-out;
+    animation-duration: 5s;
     animation-iteration-count: infinite;
 }
 
@@ -13,15 +12,22 @@
 
 @keyframes box {
     0%{
-        margin: 0;
+        background-color: red;
     }
     25%{
-        margin-right: (calc(50vw - 50px));
+        background-color: blue;
+        transform: translateY(500px);
     }
     50%{
-        margin-bottom: (calc(50vw - 50px));
+        background-color: green;
+        transform: translate(500px, 500px);
     }
     75%{
-        margin-left: calc();
+        background-color: yellow;
+        transform: translate(500px, 0%);
+    }
+    100%{
+        background-color: red;
+        transform: translate(0%, 0%);
     }
 }
