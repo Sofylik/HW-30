@@ -1,0 +1,158 @@
+body {
+  box-sizing: border-box;
+  font-family: "Montserrat Alternates", sans-serif;
+  background-image: url(../images/background.png);
+  background-size: 100%;
+  background-position: center;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.container {
+  max-width: 1090px;
+  padding: 0 175px;
+  margin: 0 auto;
+}
+
+.card-nine {
+  background-color: #fff;
+  padding: 0 92px;
+}
+.card-nine .border {
+  display: flex;
+  margin: 0 auto;
+  background-color: #000;
+  width: 536px;
+  height: 1px;
+  margin-bottom: 36px;
+}
+.card-nine__title {
+  font-weight: 400;
+  font-size: 16px;
+  color: #000;
+  margin: 36px 0px;
+  text-align: center;
+}
+.card-nine__div {
+  display: flex;
+  height: 300px;
+  align-items: center;
+}
+.card-nine__card-nine {
+  margin: 0px 115px;
+  border-radius: 20px;
+  width: 576px;
+  display: flex;
+}
+.card-nine__button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  height: 100px;
+}
+.card-nine__position {
+  font-weight: 500;
+  font-size: 20px;
+  margin-top: 5px;
+}
+.card-nine__iten:nth-child(2) {
+  margin-top: 15px;
+}
+.card-nine__p {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 20px;
+  color: #000;
+  margin-top: 5px;
+}
+
+.slide {
+  display: flex;
+}
+
+.card-nine__button:disabled {
+  cursor: not-allowed;
+}
+
+.slide {
+  display: none;
+}
+
+.slide.active {
+  display: flex;
+}
+
+.mini-line {
+  display: flex;
+  width: 174px;
+  justify-content: space-between;
+  align-items: baseline;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.line {
+  width: 18px;
+  height: 3px;
+  border-radius: 3px;
+  background-color: #d9d9d9;
+  transition: width 250ms ease-in-out;
+}
+
+.line.active {
+  width: 30px;
+  background-color: #797979;
+}
+
+.images {
+  border-radius: 20px;
+  width: 250px;
+  height: 250px;
+  display: flex;
+  overflow: hidden;
+  margin-bottom: 20px;
+  margin-right: 25px;
+}
+
+.arrow {
+  background-color: white;
+}
+
+.name {
+  font-weight: 400;
+  font-size: 36px;
+  color: #000;
+}/*# sourceMappingURL=style.css.map */
