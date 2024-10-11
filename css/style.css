@@ -1,5 +1,6 @@
 body {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-family: "Montserrat Alternates", sans-serif;
   background-image: url(../images/background.png);
   background-size: 100%;
@@ -32,12 +33,12 @@ a {
 *,
 ::after,
 ::before {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 img {
   display: block;
-  width: 100%;
 }
 
 .container {
@@ -50,14 +51,6 @@ img {
   background-color: #fff;
   padding: 0 92px;
 }
-.card-nine .border {
-  display: flex;
-  margin: 0 auto;
-  background-color: #000;
-  width: 536px;
-  height: 1px;
-  margin-bottom: 36px;
-}
 .card-nine__title {
   font-weight: 400;
   font-size: 16px;
@@ -66,14 +59,20 @@ img {
   text-align: center;
 }
 .card-nine__div {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   height: 300px;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .card-nine__card-nine {
   margin: 0px 115px;
   border-radius: 20px;
   width: 576px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 .card-nine__button {
@@ -86,20 +85,25 @@ img {
   font-weight: 500;
   font-size: 20px;
   margin-top: 5px;
-}
-.card-nine__iten:nth-child(2) {
-  margin-top: 15px;
+  margin-bottom: 20px;
 }
 .card-nine__p {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 16px;
   color: #000;
   margin-top: 5px;
+  margin-left: 20px;
+}
+.card-nine__text-wrap {
+  margin-top: 30px;
 }
 
 .slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -112,14 +116,22 @@ img {
 }
 
 .slide.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 .mini-line {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 174px;
-  justify-content: space-between;
-  align-items: baseline;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
   margin: 0 auto;
   margin-top: 30px;
 }
@@ -129,6 +141,7 @@ img {
   height: 3px;
   border-radius: 3px;
   background-color: #d9d9d9;
+  -webkit-transition: width 250ms ease-in-out;
   transition: width 250ms ease-in-out;
 }
 
@@ -138,17 +151,25 @@ img {
 }
 
 .images {
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 20px;
   width: 250px;
   height: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   overflow: hidden;
   margin-bottom: 20px;
-  margin-right: 25px;
+  margin-right: 26px;
 }
 
 .arrow {
   background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
 }
 
 .name {

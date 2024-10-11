@@ -9,6 +9,11 @@
         margin: 36px 0px;
         text-align: center;
     }
+          &__div {
+              display: flex;
+              height: 300px;
+              align-items: center;
+          }
 
     &__card-nine {
         margin: 0px 115px;
@@ -39,9 +44,9 @@
         margin-top: 5px;
         margin-left: 20px;
     }
-    &__text-wrap{
-        display: flex;
 
+    &__text-wrap {
+        margin-top: 30px;
     }
 }
 
@@ -49,19 +54,19 @@
     display: flex;
 }
 
-.card-nine__button:disabled{
+.card-nine__button:disabled {
     cursor: not-allowed;
 }
 
-.slide{
+.slide {
     display: none;
 }
 
-.slide.active{
+.slide.active {
     display: flex;
 }
 
-.mini-line{
+.mini-line {
     display: flex;
     width: 174px;
     justify-content: space-between;
@@ -70,7 +75,7 @@
     margin-top: 30px;
 }
 
-.line{
+.line {
     width: 18px;
     height: 3px;
     border-radius: 3px;
@@ -84,18 +89,23 @@
 }
 
 .images {
+    object-fit: cover;
     border-radius: 20px;
     width: 250px;
     height: 250px;
     display: flex;
     overflow: hidden;
     margin-bottom: 20px;
-    margin-right: 25px;
+    margin-right: 26px;
+
 }
 
 .arrow {
     background-color: white;
     display: flex;
+    position: absolute;
+
+
 }
 
 .name {
